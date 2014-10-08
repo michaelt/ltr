@@ -1,0 +1,87 @@
+%!TEX TS-program = xelatex
+\documentclass[leqno,13pt]{scrartcl}
+%\setlength{\columnsep}{.5in}
+\usepackage{fontspec,xltxtra,xunicode}
+\usepackage{amsmath}
+\usepackage[english]{babel}
+
+%\setmainfont{Hoefler Text}
+%\setromanfont[Mapping=tex-text,Contextuals={NoWordInitial,NoWordFinal,NoLineInitial,NoLineFinal},Ligatures={NoCommon}]{Hoefler Text}
+\setmainfont{Minion Pro}
+\setromanfont[Mapping=tex-text]{Minion Pro}
+\setsansfont[Mapping=tex-text]{Myriad Pro}
+%\setromanfont[Mapping=tex-text,Contextuals={NoWordInitial,NoWordFinal,NoLineInitial,NoLineFinal},Ligatures={NoCommon}]{Hoefler Text}
+%\defaultfontfeatures{Mapping=tex-text} 
+%\setromanfont[ItalicFeatures={Contextuals={NoLineFinal,NoLineInitial}}]{Hoefler Text}
+\setmonofont[Mapping=tex-text]{Courier}
+
+% the following are needed under some circumstances to control the appearance of 
+% section and subsection headings, but are not compatible with all document types.
+%\usepackage{sectsty} 
+%\sectionfont{\rmfamily\mdseries\upshape\Large}
+%\subsectionfont{\rmfamily\mdseries\upshape\large} 
+%\subsubsectionfont{\rmfamily\mdseries\scshape\normalsize}
+
+% here's how I'm keeping komascript's silly preferences about 
+% section and subsection headings at bay.
+
+\usepackage[flushmargin]{footmisc} % \usepackage[hang,flushmargin]{footmisc}
+
+%\pagestyle{plain}
+
+
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+
+
+
+\usepackage[breaklinks=true]{hyperref}
+\hypersetup{colorlinks,%
+citecolor=blue,%
+filecolor=blue,%
+linkcolor=blue,%
+urlcolor=blue}
+
+
+\usepackage{graphicx,fullpage}
+\setcounter{secnumdepth}{0}
+
+\usepackage{geometry}
+\geometry{verbose,letterpaper,tmargin=1in,bmargin=1.5in,lmargin=1.25in,rmargin=1.25in}
+
+\author{}
+
+% Prevents aux files from being created
+\nofiles
+
+% Prevents the pages from being numbered
+\pagestyle{empty}
+
+\begin{document}
+%\vspace*{-1.5in}
+\centerline{\includegraphics[width=7.5in]{images/hdr.png}}
+
+% Adjust this if you want text to start at a different height on the page
+\vspace*{-6.5 in}
+
+
+
+\input{ltr.tex}
+
+
+
+yours ever,
+
+\begin{figure}[htbp]
+\includegraphics[width=1.5in]{images/sig.jpeg}
+\end{figure}
+
+Michael Thompson
+
+~\\Professor of Philosophy\\University of Pittsburgh\\1001 Cathedral of
+Learning\\Pittsburgh PA 15260
+
+(412) 445 7433\\\texttt{practical.wisdom@gmail.com}
+
+\end{document}
